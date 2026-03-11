@@ -22,11 +22,11 @@ Below is the structure of the project:
 
 AI-EMERGENCY-RESPONSE/
 │
-├── index.html # Main homepage of the application
-├── firstaid.html # First aid instructions page
-├── hospitals.html # Nearby hospitals information page
-├── script.js # JavaScript logic for voice detection and interactions
-└── style.css # Styling for the web interface
+-index.html # Main homepage of the application
+-firstaid.html # First aid instructions page
+-hospitals.html # Nearby hospitals information page
+-script.js # JavaScript logic for voice detection and interactions
+-style.css # Styling for the web interface
 
 ## Features
 
