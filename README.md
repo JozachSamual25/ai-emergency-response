@@ -21,7 +21,7 @@ The application provides:
 Below is the structure of the project:
 
 AI-EMERGENCY-RESPONSE/
-│
+
 -index.html # Main homepage of the application
 -firstaid.html # First aid instructions page
 -hospitals.html # Nearby hospitals information page
