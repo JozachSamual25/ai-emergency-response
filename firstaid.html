@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First Aid Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #e0f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 30px;
+    }
+
+    .search-box {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .search-box input {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+      width: 80%;
+      max-width: 400px;
+      transition: border-color 0.3s;
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: #0077b6;
+    }
+
+    .card {
+      background: #f8f9fa;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.01);
+    }
+
+    .card-header {
+      background: #00b4d8;
+      padding: 15px 20px;
+      color: white;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-content {
+      display: none;
+      padding: 20px;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+
+    .back-btn {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      background: #6a4c93;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #563d7c;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>🩺 First Aid Guide</h1>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="🔍 Search procedures...">
+    </div>
+
+    <div class="card" data-keywords="cpr heart breath compress">
+      <div class="card-header" onclick="toggleCard(this)">1. CPR (Cardiopulmonary Resuscitation) <span>➕</span></div>
+      <div class="card-content">
+        <p>CPR is a lifesaving technique used during cardiac arrest. For example, when someone has a heart attack or nearly drowns.
+          CPR can help save a life. The American Heart Association recommends starting CPR by pushing hard and fast on the chest. Remember: <strong>Check → Call → Compress → Breath</strong>.</p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/hizBdM1Ob68?si=nVDfwczcJxKwSTHW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="card" data-keywords="choking heimlich breathe object stuck">
+      <div class="card-header" onclick="toggleCard(this)">2. Choking First Aid <span>➕</span></div>
+      <div class="card-content">
+        <p>If someone is choking and can’t breathe or speak, give quick abdominal thrusts (Heimlich maneuver) to help expel the object. For infants, give 5 back blows followed by 5 chest thrusts. Repeat until the object comes out or they become unresponsive. 
+          If unresponsive, start CPR and call for emergency help.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GymXjJJ7Ugo?si=a1b0RiEgOMP90TKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </div>
+    </div>
+
+    <div class="card" data-keywords="burn injury treatment cool water fire">
+      <div class="card-header" onclick="toggleCard(this)">3. Burn Treatment <span>➕</span></div>
+      <div class="card-content">
+        <p>For minor burns, cool the area with cool (not cold) running water for 10–15 minutes. Do not use ice. Cover the burn with a clean, 
+          non-stick bandage and avoid popping blisters. For major burns, don’t remove burnt clothing stuck to the skin. Cover the area with a clean cloth and seek emergency help immediately.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/z_5tuB1YMK0?si=An3XkhZEdpt7ox9d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="card" data-keywords="Fractures treatment">
+      <div class="card-header" onclick="toggleCard(this)">3. Fractures <span>➕</span></div>
+      <div class="card-content">
+        <p>If you suspect a broken bone, avoid moving the injured area. Immobilize it using a splint or soft padding to prevent further injury. Apply an ice pack wrapped in a cloth to reduce swelling.
+          Do not attempt to straighten the limb. Get medical attention as soon as possible.</p>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/ys0Z7zk1FM8?si=D1AbxUbNpkRkE9r8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <a href="index.html" class="back-btn">← Back to Emergency Detection</a>
+  </div>
+
+  <script>
+    function toggleCard(header) {
+      const content = header.nextElementSibling;
+      const icon = header.querySelector("span");
+
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        icon.innerText = "➕";
+      } else {
+        content.style.display = "block";
+        icon.innerText = "➖";
+      }
+    }
+
+    const searchInput = document.getElementById("searchInput");
+    searchInput.addEventListener("keyup", function() {
+      const filter = this.value.toLowerCase();
+      const cards = document.querySelectorAll(".card");
+
+      cards.forEach(card => {
+        const keywords = card.getAttribute("data-keywords");
+        if (keywords.toLowerCase().includes(filter)) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
